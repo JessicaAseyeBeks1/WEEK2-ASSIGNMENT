@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    <p>Before the click</p>
+    <button id="getDate">Get Date</button>
+    <p>Date: <span id="date">Get Current Date</span></p>
+<!-- 
+    <script src="./index.js"></script> -->
+    <script>
+        const getDate=document.getElementById('getDate')
+        const spanDate=document.getElementById("date")
+
+        getDate.addEventListener("click", function(){
+            spanDate.innerText= Date()
+        })
+
+    </script>
+
+    
+</body>
+</html>
